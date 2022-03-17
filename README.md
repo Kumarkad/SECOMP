@@ -1,1 +1,1 @@
-# SECOMP-4TH_SEM-MPL
+# SECOMP practical programs
