@@ -1,7 +1,7 @@
 # MPL-practicals
 SE computer Microprocessor laboratory
 
-#Use following commands to run ALP 
+Use following commands to run ALP 
 
 nasm -f elf filename.asm
 
