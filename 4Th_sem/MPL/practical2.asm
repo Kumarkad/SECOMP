@@ -1,8 +1,8 @@
-;nasm 2.10.09
+; ALP to accept string from user and display its length
 
 section .data
- str1 db 10,13,'Enter the string : ' ; 'Hello Dcoder!' plus a linefeed character
- len1: equ $-str1; Length of the 'Hello Dcoder!' string
+ str1 db 10,13,'Enter the string : ' 
+ len1: equ $-str1;
  str2 db 10,13,"Length of string is : "
  len2 equ $ -str2
 
@@ -16,9 +16,8 @@ section .text
 _start:
   mov eax,4 ; The system call for write (sys_write)
   mov ebx,1 ; File descriptor 1 - standard output
-  mov ecx,str1 ; Put the offset of hello in ecx
-  mov edx,len1; helloLen is a constant, so we don't need to say
-   ; mov edx,[helloLen] to get it's actual value
+  mov ecx,str1 ; 
+  mov edx,len1; 
   int 80h ; Call the kernel
   
   mov eax,3
