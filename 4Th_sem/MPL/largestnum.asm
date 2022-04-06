@@ -1,3 +1,4 @@
+; ALP to print largest number of array
 section .data
 	msg1 :db 10,13,"Array elements are : "
 	msg1_len : equ $ -msg1
